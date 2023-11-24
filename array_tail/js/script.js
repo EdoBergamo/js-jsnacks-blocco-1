@@ -12,4 +12,8 @@ console.log(lastElements);
 
 const lastElementsChoice = parseInt(prompt("Quanti degli ultimi elementi vuoi stampare"))
 
-if (lastElementsChoice > 0) console.log(numeriCasuali.slice(-lastElementsChoice))
+if (lastElementsChoice > 0 && lastElementsChoice <= numeriCasuali.length) {
+    console.log(numeriCasuali.slice(-lastElementsChoice))
+} else {
+    console.log(`Inserisci un valore compreso tra 1 e ${numeriCasuali.length}`);
+}

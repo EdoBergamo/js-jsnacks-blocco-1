@@ -5,8 +5,13 @@ let flag = false;
 fruits.push(pesca);
 
 for (let i = 0; i < fruits.length; ++i) {
-    if ('cocomero'.toLowerCase() === fruits[i].toLowerCase()) flag = true;
+    if ('cocomero'.toLowerCase() === fruits[i].toLowerCase()) {
+        flag = true;
+    }
 }
 
-if (flag) console.log('Trovato! Devo solo preparare il cocktail.')
-else console.log('Oh no, devo uscire a comprare il cocomero!')
+if (flag) {
+    console.log('Trovato! Devo solo preparare il cocktail.');
+} else {
+    console.log('Oh no, devo uscire a comprare il cocomero!');
+}
